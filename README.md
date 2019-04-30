@@ -6,10 +6,11 @@ See [Project Proposal/Outline](https://wiki.lib.utk.edu/display/DLP/Proposal%3A+
 
 See [DIT-1134](https://jira.lib.utk.edu/browse/DIT-1134).
 
-I'm going to roll with the J. G. M. Ramsey Papers (MS.0253). It's a medium-sized collection made up of relatively simple/straight-forward transcription. See the sample data in [trial-coll](./trial-coll).
+I'm going to roll with the J. G. M. Ramsey Papers (MS.0253). It's a medium-sized collection made up of relatively simple/straight-forward transcription. See the sample data in [data](./data).
 
 No TIFFs included in this repository.
 
 ### Test Data Errata ###
 
+* The test data in [data](./data) needs to have the `<?xml-model href="..."?>` URIs updated to the latest version of our TEI Lite schema.
 
