@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="xar" name="utk-manuscripts">
+  <xmlproperty file="expath-pkg.xml.tmpl"/>
+  <property name="project.app" value="utk-manuscripts"/>
+  <property name="build.dir" value="build"/>
+
+  <target name="xar" depends="git.rev-count, git.short-hash">
+    <mkdir dir="${build.dir}"/>
+    <copy file="expath-pkg.xml.tmpl" tofile="expath-pkg.xml" filtering="true" overwrite="true">
+      <filterset>
+        <filter token="project.version" value="${git.rev-count}"/>
+      </filterset>
+    </copy>
+  </target>
+</project>
